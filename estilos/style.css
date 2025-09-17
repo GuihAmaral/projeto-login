@@ -39,12 +39,14 @@ section#login {
     overflow: hidden;
     
     background-color: #e7e7e7;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../imagens/pexels-labibbb03-10177601.jpg) no-repeat center center fixed;
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(../imagens/pexels-labibbb03-10177601.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
