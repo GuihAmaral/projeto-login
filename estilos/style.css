@@ -35,18 +35,19 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     
     background-color: #e7e7e7;
     background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.9)), url(../imagens/pexels-labibbb03-10177601.jpg) no-repeat center center fixed;
     background-size: cover;
-    width: 250px;
+    width: 251px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    
     transition: width .3s, height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -64,9 +65,76 @@ section#login > div#formulario {
 
 div#formulario > h1 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 div#formulario > p {
     font-size: 0.8em;
+}
+
+form > div.campo {
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.514);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: #E7E7E7;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #E7E7E7;
+    font-size: 1em;
+    width: calc(100% - 46px);
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form > input[type=submit]:hover {
+    background-color: #FA824C;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #E7E7E7;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: 0.3s;
+}
+
+form > a.botao:hover {
+    background-color: #fa824c;
 }
